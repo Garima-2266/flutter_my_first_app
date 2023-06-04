@@ -38,11 +38,32 @@ class MyApp extends StatelessWidget {
         ),
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.network(
                 "https://images.pexels.com/photos/1926404/pexels-photo-1926404.jpeg?cs=srgb&dl=pexels-imlfernandez-1926404.jpg",
                 width: MediaQuery.of(context).size.width,
+                height: 100,
+                fit: BoxFit.cover,
               ),
+              Text(
+                "Kapla Valor",
+                style: TextStyle(
+                  fontSize: 24,
+                ),
+              ),
+              Row(
+                children: [
+                  Text(
+                    "\$5000",
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
