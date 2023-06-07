@@ -46,6 +46,16 @@ class MyApp extends StatelessWidget {
                 height: 100,
                 fit: BoxFit.cover,
               ),
+              Row(
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      print("Black");
+                    },
+                    child: Text("Black"),
+                  ),
+                ],
+              ),
               Text(
                 "Kapla Valor",
                 style: TextStyle(
@@ -54,6 +64,36 @@ class MyApp extends StatelessWidget {
               ),
               Row(
                 children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.star,
+                        color: Colors.orange,
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Colors.orange,
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Colors.orange,
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Colors.orange,
+                      ),
+                      Icon(
+                        Icons.star,
+                        color: Colors.orange,
+                      ),
+                      Text(
+                        "5.0 Stars",
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
                   Text(
                     "\$5000",
                     style: TextStyle(
@@ -61,6 +101,34 @@ class MyApp extends StatelessWidget {
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
                     ),
+                  ),
+                ],
+              ),
+              const Text(
+                "Description",
+                style: TextStyle(
+                  fontSize: 22,
+                ),
+              ),
+              const Text(
+                "Lorem ipsum",
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+              Row(
+                children: [
+                  FilledButton(
+                    onPressed: () {
+                      print("buy now");
+                    },
+                    child: Text("Buy now"),
+                  ),
+                  FilledButton(
+                    onPressed: () {
+                      print("Add a bag");
+                    },
+                    child: Text("Add a bag"),
                   ),
                 ],
               )
