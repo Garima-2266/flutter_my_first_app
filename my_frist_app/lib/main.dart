@@ -41,20 +41,11 @@ class MyApp extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.network(
-                "https://images.pexels.com/photos/1926404/pexels-photo-1926404.jpeg?cs=srgb&dl=pexels-imlfernandez-1926404.jpg",
+                "https://dipenmaharjan.com.np/shreeamba.jpg",
                 width: MediaQuery.of(context).size.width,
                 height: 100,
+                // compares to object-fit in css
                 fit: BoxFit.cover,
-              ),
-              Row(
-                children: [
-                  TextButton(
-                    onPressed: () {
-                      print("Black");
-                    },
-                    child: Text("Black"),
-                  ),
-                ],
               ),
               Text(
                 "Kapla Valor",
@@ -62,29 +53,34 @@ class MyApp extends StatelessWidget {
                   fontSize: 24,
                 ),
               ),
-              Row(
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
                     children: [
-                      Icon(
-                        Icons.star,
-                        color: Colors.orange,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.orange,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.orange,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.orange,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.orange,
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.star,
+                            color: Colors.orange,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.orange,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.orange,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.orange,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.orange,
+                          ),
+                        ],
                       ),
                       Text(
                         "5.0 Stars",
@@ -111,7 +107,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               const Text(
-                "Lorem ipsum",
+                "Lorem Ipsu Lorem Ipsu Lorem Ipsu Lorem Ipsu Lorem Ipsu Lorem IpsuLorem Ipsu",
                 style: TextStyle(
                   fontSize: 16,
                 ),
@@ -119,16 +115,18 @@ class MyApp extends StatelessWidget {
               Row(
                 children: [
                   FilledButton(
+                    // onpressed function
                     onPressed: () {
                       print("buy now");
                     },
-                    child: Text("Buy now"),
+                    child: Text("Buy Now"),
                   ),
                   FilledButton(
+                    // onpressed function
                     onPressed: () {
-                      print("Add a bag");
+                      print("Add a Bag");
                     },
-                    child: Text("Add a bag"),
+                    child: Text("Add a Bag"),
                   ),
                 ],
               )
